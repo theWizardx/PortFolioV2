@@ -1,0 +1,186 @@
+body {
+  display: block;
+  margin: 0;
+  text-align: center;
+  font-family: "Roboto", sans-serif;
+}
+
+div {
+  display: block;
+}
+
+h1 {
+  font-family: "Dancing Script", cursive;
+  color: #176b87;
+  font-size: 10rem;
+  margin: 0 auto 0 auto;
+}
+
+h2 {
+  color: #176b87;
+  font-size: 2rem;
+  font-weight: bold;
+  padding-bottom: 10px;
+}
+
+h3 {
+  color: #176b87;
+  font-size: 1.25rem;
+  margin-top: 0;
+}
+
+p {
+  line-height: 2;
+}
+
+img {
+  overflow-clip-margin: content-box;
+  overflow: clip;
+}
+
+hr {
+  border: dotted #176b87 6px;
+  border-bottom: none;
+  width: 4%;
+  margin: 100px auto;
+}
+
+a {
+  color: white;
+}
+
+a:hover {
+  color: #053b50;
+  background-image: linear-gradient(#64ccc5, #eeeeee);
+}
+
+.title-container {
+  background-color: #64ccc5;
+  position: relative;
+  padding-top: 100px;
+  text-align: center;
+  height: 400px;
+}
+
+.title-container h2 {
+  margin-top: 0;
+}
+
+.title-container img {
+  width: 300px;
+}
+.first-cloud {
+  position: absolute;
+  top: 15px;
+  left: 200px;
+}
+
+.second-cloud {
+  position: absolute;
+  right: 200px;
+  bottom: 70px;
+}
+
+.profile {
+  margin-top: 50px;
+}
+
+.profile img {
+  width: 220px;
+  height: 230px;
+  border-radius: 50%;
+  box-shadow: 0px 0px 50px #64ccc5;
+  margin-bottom: 15px;
+}
+
+.skills-container {
+  display: grid;
+  grid-template-rows: repeat(1fr, 1fr);
+  grid-template-columns: 0.5fr 1fr;
+  width: 50%;
+  text-align: left;
+  row-gap: 2rem;
+  margin: 75px auto 0 auto;
+}
+
+.contact {
+  margin-bottom: 100px;
+}
+
+.contact-message {
+  width: 40%;
+  margin: 30px auto 0 auto;
+  margin-bottom: 20px;
+}
+
+.btn {
+  text-transform: uppercase;
+  padding: 10px 20px 10px 20px;
+  text-decoration: none;
+  color: #fff;
+  font-size: 20px;
+  background-image: linear-gradient(#176b87, #64ccc5);
+  border-radius: 50px;
+  /* outline: double #176b87; */
+}
+
+.footer-container {
+  background-color: #64ccc5;
+  padding: 20px 0px 100px;
+}
+
+.facebook {
+  margin: 10px 20px;
+}
+
+.instagram {
+  margin: 10px 20px;
+}
+
+.twitter {
+  margin: 10px 20px;
+}
+
+@media (max-width: 1200px) {
+  .title-container {
+    /* padding-top: 350px; */
+  }
+
+  .first-cloud {
+    top: 5px;
+    left: 15px;
+  }
+
+  .skills-container {
+    column-gap: 20px;
+  }
+}
+
+@media (max-width: 566px) {
+  .title-container h1 {
+    font-size: 9rem;
+  }
+
+  .first-cloud {
+    display: none;
+  }
+
+  .second-cloud {
+    display: none;
+  }
+
+  .skills-container {
+    column-gap: 20px;
+  }
+}
+
+@media (max-width: 425px) {
+  .title-container h1 {
+    font-size: 8rem;
+  }
+
+  .skills-container {
+    margin-left: 45px;
+    column-gap: 20px;
+  }
+}
